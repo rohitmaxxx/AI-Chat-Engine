@@ -1,0 +1,46 @@
+{
+  "name": "ai-assistant-node",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "ingest": "tsx scripts/ingestPdfData.ts",
+    "ingest2": "tsx src/controllers/ingestPdfDataMilvus.ts",
+    "chat": "tsx scripts/chat.ts",
+    "chat2": "tsx src/controllers/chatMilvus.ts",
+    "dev2": "tsc -t es2022 -m es2022 --moduleResolution nodenext ingestPdfData.ts",
+    "dev": "tsx src/index.ts",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@pinecone-database/pinecone": "^0.0.14",
+    "@typescript-eslint/parser": "^5.59.2",
+    "@zilliz/milvus2-sdk-node": "^2.2.4",
+    "axios": "^1.4.0",
+    "cors": "^2.8.5",
+    "dotenv": "^16.0.3",
+    "express": "^4.18.2",
+    "langchain": "^0.0.67",
+    "multer": "^1.4.5-lts.1",
+    "mysql2": "^3.3.1",
+    "pdf-parse": "^1.1.1",
+    "sequelize": "^6.31.1",
+    "tsx": "^3.12.7"
+  },
+  "devDependencies": {
+    "@types/cors": "^2.8.13",
+    "@types/express": "^4.17.17",
+    "@types/multer": "^1.4.7",
+    "@types/node": "^18.16.3",
+    "@types/pdf-parse": "^1.1.1",
+    "nodemon": "^2.0.22",
+    "pg": "^8.10.0",
+    "pinecone": "^0.1.0",
+    "sequelize-cli": "^6.6.0",
+    "ts-node": "^10.9.1",
+    "typescript": "^5.0.4"
+  }
+}
