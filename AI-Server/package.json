@@ -6,7 +6,7 @@
   "type": "module",
   "scripts": {
     "ingest": "tsx scripts/ingestPdfData.ts",
-    "ingest2": "tsx src/controllers/ingestPdfDataMilvus.ts",
+    "ingest2": "tsx src/scripts/ingestPdfDataMilvus.ts",
     "chat": "tsx scripts/chat.ts",
     "chat2": "tsx src/controllers/chatMilvus.ts",
     "dev2": "tsc -t es2022 -m es2022 --moduleResolution nodenext ingestPdfData.ts",
